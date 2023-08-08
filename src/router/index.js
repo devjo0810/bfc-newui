@@ -3,6 +3,7 @@ import LoginPage from '@/pages/Login.vue'
 import JoinPage from '@/pages/Join.vue'
 import ChecklistPage from '@/pages/Checklist.vue'
 import NotFoundPage from '@/pages/NotFound.vue'
+import TestPage from '@/pages/Test.vue'
 import { useDialogStore } from '@/stores/dialog'
 import { useLoginStore } from '@/stores/login'
 
@@ -10,6 +11,7 @@ const routes = [
   { path: '/', component: LoginPage },
   { path: '/join', component: JoinPage },
   { path: '/checklist', component: ChecklistPage, meta: { auth: true, layout: 'Checklist' } },
+  { path: '/test', component: TestPage },
   { path: '/:pathMatch(.*)*', component: NotFoundPage }
 ]
 
